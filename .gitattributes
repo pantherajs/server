@@ -1,0 +1,2 @@
+*.js linguist-detectable=true
+*.spec.js linguist-detectable=false
