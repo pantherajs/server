@@ -4,9 +4,7 @@
   "description": "An HTTP server with methods for gracefully shutting down and restarting.",
   "main": "lib/index.js",
   "scripts": {
-    "coverage": "codecov",
-    "lint": "eslint lib/",
-    "test": "nyc ava"
+    "test": "eslint lib && nyc ava"
   },
   "engines": {
     "node": ">=8.2.1"
@@ -27,7 +25,6 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
-    "codecov": "^3.0.4",
     "eslint": "^5.4.0",
     "events": "^3.0.0",
     "nyc": "^12.0.2",
