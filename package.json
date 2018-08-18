@@ -1,6 +1,6 @@
 {
   "name": "@panthera/server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An HTTP server with methods for gracefully shutting down and restarting.",
   "main": "lib/index.js",
   "scripts": {
