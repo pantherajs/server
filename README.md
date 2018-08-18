@@ -6,5 +6,4 @@
 [![Build Status](https://img.shields.io/travis/com/pantherajs/server/master.svg?style=flat-square)](https://travis-ci.com/pantherajs/server)
 [![Code Coverage](https://img.shields.io/codeclimate/coverage/pantherajs/server.svg?style=flat-square)](https://codeclimate.com/github/pantherajs/server)
 [![Dependencies Status](https://david-dm.org/pantherajs/server/status.svg?style=flat-square)](https://david-dm.org/pantherajs/server)
-[![devDependencies Status](https://david-dm.org/pantherajs/server/dev-status.svg?style=flat-square)](https://david-dm.org/pantherajs/server?type=dev)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/pantherajs/server/blob/master/LICENSE)
