@@ -14,7 +14,7 @@ test('should call #close, then #listen', async t => {
   server.close  = sinon.stub().resolves(server);
   server.listen = sinon.stub().resolves(server);
 
-  const bound = restart.bind(server);
+  const bound = restart.bind(null, server);
 
   await t.notThrows(() => {
     bound();

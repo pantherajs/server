@@ -18,7 +18,7 @@ test('should resolve immediately if server is not listening', async t => {
     }
   };
 
-  const bound = close.bind(server);
+  const bound = close.bind(null, server);
 
   await t.notThrows(() => {
     bound();
@@ -37,7 +37,7 @@ test('should destroy remaining sockets', async t => {
     sockets: new Map()
   };
 
-  const bound  = close.bind(server);
+  const bound  = close.bind(null, server);
   const socket = {
     destroy: sinon.stub()
   };

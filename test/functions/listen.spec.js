@@ -68,7 +68,7 @@ test('#listen should resolve immediately if server is already listening', async 
     }
   };
 
-  const bound = listen.bind(server);
+  const bound = listen.bind(null, server);
 
   await t.notThrows(() => {
     bound();
@@ -84,7 +84,7 @@ test('request sockets should have idle flag set to `false`', async t => {
     sockets:  new Map()
   };
 
-  const bound = listen.bind(server);
+  const bound = listen.bind(null, server);
 
   await t.notThrows(() => {
     bound();
@@ -108,7 +108,7 @@ test('completed responses should set socket idle flag to `true`', async t => {
     sockets:  new Map()
   };
 
-  const bound = listen.bind(server);
+  const bound = listen.bind(null, server);
 
   await t.notThrows(() => {
     bound();
@@ -136,8 +136,8 @@ test('completed responses should destroy socket if server is not listening', asy
     sockets:  new Map()
   };
 
-  const boundListen = listen.bind(server);
-  const boundClose  = close.bind(server);
+  const boundListen = listen.bind(null, server);
+  const boundClose  = close.bind(null, server);
 
   await t.notThrows(() => {
     boundListen();
@@ -170,7 +170,7 @@ test('connecting sockets should have idle flag set to `true`', async t => {
     sockets:  new Map()
   };
 
-  const bound = listen.bind(server);
+  const bound = listen.bind(null, server);
 
   await t.notThrows(() => {
     bound();
@@ -193,7 +193,7 @@ test('connecting sockets should have uuid set', async t => {
     sockets:  new Map()
   };
 
-  const bound = listen.bind(server);
+  const bound = listen.bind(null, server);
 
   await t.notThrows(() => {
     bound();
@@ -215,7 +215,7 @@ test('connecting sockets should be added to map of sockets', async t => {
     sockets:  new Map()
   };
 
-  const bound = listen.bind(server);
+  const bound = listen.bind(null, server);
 
   await t.notThrows(() => {
     bound();
